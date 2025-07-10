@@ -15,7 +15,7 @@ source:
   sha256: 3ccba7b912f5bc0facc0f2738a5a55dd843653d2f3c02cc31a09fb5efad4b9c7
 
 build:
-  number: 0
+  number: 1
   skip: match(python, "<3.10")
   script: |
     export CARGO_PROFILE_RELEASE_STRIP=symbols
