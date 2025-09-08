@@ -4,7 +4,7 @@ schema_version: 1
 context:
   name: pylibjpeg-rle
   python_name: pylibjpeg_rle
-  version: 2.1.0
+  version: "2.2.0"
 
 package:
   name: ${{ name }}
@@ -12,10 +12,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ python_name }}-${{ version }}.tar.gz
-  sha256: 3ccba7b912f5bc0facc0f2738a5a55dd843653d2f3c02cc31a09fb5efad4b9c7
+  sha256: 1a37353afbdd6f67aa3c2007879fff8ca30a98552cab7ed7f2aa00725ea4bb27
 
 build:
-  number: 1
+  number: 0
   skip: match(python, "<3.10")
   script: |
     export CARGO_PROFILE_RELEASE_STRIP=symbols
